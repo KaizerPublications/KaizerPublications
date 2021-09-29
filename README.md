@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+One code to rule them all!!!! 
+
 <!--
 **KaizerPublications/KaizerPublications** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
