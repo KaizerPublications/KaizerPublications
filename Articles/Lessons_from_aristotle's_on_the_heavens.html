@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-09-29 Wed 15:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lessons From Aristotle's On The Heavens</title>
+<meta name="author" content="Kaizer" />
+<meta name="description" content="Outsoar The Rainbow" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Lessons From Aristotle&rsquo;s On The Heavens</h1>
+<p>
+<b>The Development of Scientific Knowledge has Unveiled the Mysterious Nature of both the World of Nature and the World of Life. How Does This Affect the Way We See The Image of Ourselves? How Does This Affect The Way We Construct Our Meaning of Life?</b>
+</p>
+
+<p>
+When recounting about his time with Socrates, Plato attributed the following saying to him. “I know that I know nothing.” This is a paradoxical claim especially from a man who was praised for his genius. It is nonetheless a very self-conscious statement. Socrates further admonishes knowledgeable men by stating that once you teach a man how to read and write, he is filled with conceit and falsely assumes that he is the source of that knowledge; he becomes a burden to his fellows. Carl Jung stated that as a species, we learn nothing from history. These were men of great reasoning and yet they doubt the ability of man to learn and change to what he sees in the world. Plato’s allegory of the cave perhaps best captures this sentiment. If all our lives we have been surrounded by shadows and falsehoods how can one be convinced that outside the cave of ignorance, truth and light shine unbounded? Further, why should one even bother if entire generations have lived and died surrounded by lies? Finally, how can one ascertain that the ‘light-bringer’ is not just one of the machinations of this pit of phantoms?
+</p>
+
+<p>
+In Aristotle’s “On the Heaven’s”, Aristotle puts forward some very complicated concepts for his time. He begins his discussion with an explanation of his understanding of the nature of the universe. He concluded that three things make up a physically constituted entity: bodies and magnitudes, beings possessed of bodies and magnitude, and the principles of causes of these beings. His theories on magnitude are similar to our understanding of three-dimensional geometry. However, modern science and his views continue to diverge at this point. He believed that there exist 5 elements in the universe; earth (heaviest), water, air, fire (lightest) and the elusive aether. The ‘heaviness’ or ‘lightness’ of the substance was a function of the movement to or from the centre respectively. Aristotle lacked the methods and means to conclusively investigate natural phenomena. He acknowledges this by saying, “It is well that we should seek to increase our understanding, though we have but little to go upon, and are placed at so great a distance from the facts in question.” He reinforces this by saying, “To succeed often or in many things is difficult.” He also says that the best actions are more often than not a function of circumstance and pure luck. It is here we derive our first lesson for life from Aristotle; we need to understand our own limitations as humans whenever we choose to undertake any action (Smith, 2012). It is a sentiment echoed by Plato when he acknowledges that taking people out of the cave is a difficult task indeed. There is a need to accept that for all our advancements in science, much lies beyond the realm of human control.
+</p>
+
+<p>
+Aristotle brings this out through his example involving three men. One is endowed with superior physical capabilities, another with medium ability and the other with exceedingly inferior physical capability. Clearly, the luck of the draw is a huge factor. In addition, the weakest man will require herculean effort and may still fail in his goal. He would be better served doing something else otherwise the other alternative he left with is despair. Nonetheless, it is Aristotle himself who solves this quandary and gives us our second lesson (Smith, 2012). He says on this earth human beings are blessed with superior cognitive abilities and as such they have a myriad of options available to them. “On our earth, it is man that has the greatest variety of actions-for their many goods that man can secure.” He refers to what we can achieve through our actions. “Action always requires two terms: end and means.” He cautions us then by making us acknowledge that actions come with consequences. We are therefore responsible for the results of our actions. This is a difficult lesson for some because it burdens them with an almost existential responsibility. For others however, such as Albert Camus, this freedom is liberating. He says that we must live a life of meaning and we ascribe this meaning ourselves through our actions. He uses the myth of Sisyphus as an analogy. Cursed for scorning the gods, Sisyphus must roll a heavy boulder up a hill only to watch it roll back down. Camus however asserts that we must imagine Sisyphus as happy. At that moment when the boulder is at the zenith, Sisyphus has triumphed over the gods. (Popova, 2014)
+</p>
+
+<p>
+Aristotle further expands his understanding of the universe through explaining his understanding of motion. He theorized that all bodies have a natural way of moving, which could be further classified as regular or irregular. He goes on to say that he believes that everything was moved by something. Irregularity of motion therefore can only be caused by an external agent or by the object itself. Interestingly, this is a rudimentary form of Newton’s first law of motion (Campbell, 2016). He also introduces a third option which is circular motion. A body’s vertical motion would be a function of its lightness or heaviness. Light bodies move upward while heavy bodies move downward. It follows then that bodies that exhibit circular motion must be of an exalted substance. He therefore concluded that circular motion was for heavenly bodies. There was a prime body which surrounded all other bodies and caused the motion of the outermost spheres. This prime body was made up of aether. It was the pure, perfect substance that also made up the stars, sun and planets. He also came up with a geocentric model to explain the placing of bodies in the heavens. Interestingly, replacing the position of the sun and the earth in his model would result in a model similar to ours. Finally, he believed that past the stars lay a spiritual realm beyond the reach of man. He also came up with a creation theory that stated that earth existed in an eternal state. He also believed the earth was spherical and used the moon’s movements and location of stars as evidence. He also claimed that the earth was unique because it was the centre of the universe. His argument is cyclic however because according to him the earth was the centre of motion, thereby the centre of the universe and thus it had to be unique. If multiple centers exist, then planets would be unable to know how to move. It is here we extract our third lesson from Aristotle (Smith, 2012)
+</p>
+
+<p>
+Aristotle questions his need to dissect, analyze and make pronouncements on the functioning of the universe. It is a question that tugs at Aristotle’s heartstrings; he’s written entire books on his understanding of the universe. He continually questions the wisdom behind trying to understand the mysteries of the cosmos. He doubts as to whether he is indulging in “excessive zeal or excessive folly”. He however, concludes that he has a right to do so. He further says that any theory he discredits is fiction and that he has made his point beyond reproach and that the whole issue “has now been sufficiently explained.” He is exceedingly self-critical and that is evidenced when he says, “One should first consider what reason there is for speaking and also what kind of certainty is being looked for.” “ Everything that is moved is moved by something.” Heavenly bodies operate unconsciously according to the design stipulated by an unseen force that he described as, “primary and simple and ungenerated and indestructible.” “Everything that  moves is moved by something.” Human action is not above this law. All that remains is whether that motivation is conscious or unconscious. “For if the mover moved not always with the same force, or if the moved… did not remain the same, or if both were to change, the result might well be an irregular movement in the moved.” Perhaps Aristotle simply could not live in a chaotic meaningless universe. Perhaps he had a god-complex and had to ascribe his own meaning to every little thing he saw. He may have even simply been expressing his faith in an ordered universe. Regardless, it is imperative to realize our desires in what we choose to do.
+</p>
+
+<p>
+In conclusion, Aristotle’s “On the Heavens” was a bold attempt by one man to reduce the mystery of the heavens. What resulted however, was a series of lessons vital to understanding the human condition. The work was almost completely wrong. It was a desperate attempt by one who knew that he knew  nothing. Aristotle was satisfied with his attempt nonetheless. His work has also garnered perennial fame in the annals of history. Science may be used to model our maps of reality that in turn construct our meaning of life but perhaps more importantly is the drive to create a better tomorrow by accepting the things we cannot change, the expediency and desire to change those we can and finally but ultimately use this knowledge for good.
+</p>
+
+<p>
+<a href="file:///home/kaizer/KaizerPublications.com/index.html">Home</a>
+</p>
+
+<p>
+<b>References</b>
+</p>
+
+<p>
+Campbell, D. (2016). Aristotle’s On the Heavens. Retrieved from <a href="https://www.ancient.eu/article/959/aristotles-on-the-heavens/">https://www.ancient.eu/article/959/aristotles-on-the-heavens/</a>
+</p>
+
+<p>
+Popova, M. (2014). A Life Worth Living: Albert Camus on Our Search for Meaning and Why Happiness Is Our Moral Obligation. Retrieved from <a href="https://www.brainpickings.org/2014/09/22/a-life-worth-living-albert-camus/">https://www.brainpickings.org/2014/09/22/a-life-worth-living-albert-camus/</a>
+</p>
+
+<p>
+Smith, N. (2012). Analysis of On the Heavens by Aristotle: The Argument for an Ordered Universe. Retrieved from <a href="https://www.articlemyriad.com/analysis-heavens-aristotle-argument-ordered-universe/">https://www.articlemyriad.com/analysis-heavens-aristotle-argument-ordered-universe/</a>
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Kaizer</p>
+<p class="date">Created: 2021-09-29 Wed 15:15</p>
+</div>
+</body>
+</html>

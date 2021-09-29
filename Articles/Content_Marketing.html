@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-09-29 Wed 16:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Content Marketing</title>
+<meta name="author" content="Kaizer" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Content Marketing</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf3aeea8">What is Content Marketing?</a>
+<ul>
+<li><a href="#org28ff300">Content Marketing Simplified</a>
+<ul>
+<li><a href="#orgcffcd37">Perspective is Everything</a></li>
+<li><a href="#org6ea5a70">What Does This Mean For Your Business?</a></li>
+</ul>
+</li>
+<li><a href="#org5d50c54">Why Should You Invest in Content Marketing?</a></li>
+</ul>
+</li>
+<li><a href="#orgbed89c4">How to Develop a Content Marketing Strategy</a>
+<ul>
+<li><a href="#org431a16f">How Do You Develop a Content Marketing Strategy?</a>
+<ul>
+<li><a href="#org5fa2d3e">Pro Tips:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org69647f4">Content Mapping: Why it Matters and How to do it</a>
+<ul>
+<li><a href="#orgda414d6">Levels of the Marketing Funnel</a>
+<ul>
+<li><a href="#org15176af">Awareness</a></li>
+<li><a href="#orgdf37ea3">Liking your brand</a></li>
+<li><a href="#orgd6a0e21">Trust and conversion</a></li>
+<li><a href="#org5384097">Retention</a></li>
+</ul>
+</li>
+<li><a href="#org56e8cfd">Content Mapping and The Marketing Funnel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf3aeea8" class="outline-2">
+<h2 id="orgf3aeea8">What is Content Marketing?</h2>
+<div class="outline-text-2" id="text-orgf3aeea8">
+<p>
+Let’s break it down.
+</p>
+</div>
+
+
+<div id="outline-container-org28ff300" class="outline-3">
+<h3 id="org28ff300">Content Marketing Simplified</h3>
+<div class="outline-text-3" id="text-org28ff300">
+<p>
+Content is anything that sends a message. From articles to podcasts, content is anything that makes you think or feel. It is a shared idea or experience.
+</p>
+
+<p>
+Blog posts, videos, podcasts, magazines, images; anything goes. What matters is the ability to connect. If you see something that you like, that’s content.
+</p>
+</div>
+
+
+<div id="outline-container-orgcffcd37" class="outline-4">
+<h4 id="orgcffcd37">Perspective is Everything</h4>
+<div class="outline-text-4" id="text-orgcffcd37">
+<p>
+Surely it can’t be as simple as connecting with other people?
+</p>
+
+<p>
+Why not?
+</p>
+
+<p>
+Think about your favorite purchases. How did they make you feel? Were you hustled in a dark corner by a sketchy salesman? Or was it so enjoyable that you paid with no hesitation?
+</p>
+
+<p>
+This is the power of effective inbound marketing tactics. People pay you for what they were going to do anyway.
+</p>
+
+<p>
+Content marketing is one of the most effective inbound marketing tactics. It’s like a woman set on seducing a man. She’ll tease you so bad, you’ll chase her yourself.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6ea5a70" class="outline-4">
+<h4 id="org6ea5a70">What Does This Mean For Your Business?</h4>
+<div class="outline-text-4" id="text-org6ea5a70">
+<p>
+Your marketing is not as effective as it can be if you have to force people to interact with your brand. They have to want to be there.
+</p>
+
+<p>
+Otherwise, they’ll move on to the next schmoe for yet another forgettable purchase.
+</p>
+
+<p>
+Your customers need to feel understood. Accepted. Heck, even loved.
+</p>
+
+<p>
+I know, I know. You’re not starting a charity and rejection hurts. However, remember what is at stake here. It isn’t your pride. It’s your business.
+</p>
+
+<p>
+You need to be the best. And if you’re not going to release 4 blog posts a month, someone else will. Guess what happens then? You’re out of business.
+</p>
+
+<p>
+Also, if you have a product and you’re actively promoting it, why should you let others decide what to say about it?
+</p>
+
+<p>
+It’s your product. Define it. Communicate in a way people will understand. Connect with those who will benefit from your product.
+</p>
+
+<p>
+One of the best ways to do this is through content marketing. Why?
+</p>
+
+<p>
+Because content marketing is the most effective way to control the narrative.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5d50c54" class="outline-3">
+<h3 id="org5d50c54">Why Should You Invest in Content Marketing?</h3>
+<div class="outline-text-3" id="text-org5d50c54">
+<p>
+Content marketing is more than just telling people about your product. It’s about connecting with other people through a product that you love and that you know can help them.
+</p>
+
+<p>
+The customer just doesn’t know it yet.
+</p>
+
+<p>
+You have to show them. Connect with them. Make them understand why they need your product.
+</p>
+
+<p>
+There are four main reasons why;
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org6bbc1d8"></a>It establishes you as a resource<br />
+<div class="outline-text-5" id="text-org6bbc1d8">
+<p>
+Educate your customers. Teach them what they need to know in order to make an informed purchase.
+</p>
+
+<p>
+This builds trust with your customer. They can go to you for any concerns they may have because they trust your brand.
+</p>
+
+<p>
+And a great brand is a wonderful thing for customers, investors and business owners.
+</p>
+</div>
+</li>
+
+<li><a id="org228e7b4"></a>It attracts customers who know they need you<br />
+<div class="outline-text-5" id="text-org228e7b4">
+<p>
+By combining SEO and content marketing tactics, you can attract people to your content based on their search intent.
+</p>
+
+<p>
+People who are actively looking for a solution to their problem will come across your content and if they like it, you’ve got a potential customer.
+</p>
+</div>
+</li>
+
+<li><a id="orgc22a4de"></a>It creates strong brand awareness<br />
+<div class="outline-text-5" id="text-orgc22a4de">
+<p>
+Your brand will grow because people can trust you. Concurrently, you are attracting people who are interested in your product. And when people love something, they tend to talk about it with other people.
+</p>
+
+<p>
+This creates a flywheel effect for your business. Over time, you will attract more and more customers who already love what you have to offer.
+</p>
+</div>
+</li>
+
+<li><a id="orgb547ede"></a>It tells your story<br />
+<div class="outline-text-5" id="text-orgb547ede">
+<p>
+People love stories. They give a sense of meaning, a sense of purpose. By telling your story you attract kindred spirits. These people might be interested in what you have to offer because they resonate with your business and what it stands for.
+</p>
+
+<p>
+Content marketing is all about connection. It allows you the opportunity to capture the hearts and minds of like-minded people.
+</p>
+
+<p>
+These connections are extremely valuable for your business. These are people that love what you do. They are ready to buy your products because they feel understood, appreciated and accepted.
+</p>
+
+<p>
+What’s more, the product sells because it was targeted specifically to them.
+</p>
+
+<p>
+Content marketing is one of the most effective forms of marketing.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbed89c4" class="outline-2">
+<h2 id="orgbed89c4">How to Develop a Content Marketing Strategy</h2>
+<div class="outline-text-2" id="text-orgbed89c4">
+<p>
+What is a Content Marketing Strategy?
+</p>
+
+<p>
+A content marketing strategy is simply what you want to say and how you’re going to say it.
+</p>
+
+<p>
+It is your go-to guide for your content marketing goals.
+</p>
+
+<p>
+Your goals are your roadmap. What do you want to do? Why are you in business and how does content marketing help you achieve that?
+</p>
+
+<p>
+Another factor to consider is what kind of content you will produce and how you will distribute it.
+</p>
+
+<p>
+Having a clear vision of the kind of business you want to develop will determine your content marketing strategy.
+</p>
+</div>
+
+
+<div id="outline-container-org431a16f" class="outline-3">
+<h3 id="org431a16f">How Do You Develop a Content Marketing Strategy?</h3>
+<div class="outline-text-3" id="text-org431a16f">
+</div>
+<ul class="org-ul">
+<li><a id="org3c89175"></a>Determine your goals<br />
+<div class="outline-text-5" id="text-org3c89175">
+<p>
+This is the first step. It sets the stage for everything else. Your vision should be as comprehensive as possible in order to avoid painful setbacks in the future.
+</p>
+
+<p>
+Your goals define your brand and tone, how you interact with your customers and how you’re going to approach them.
+</p>
+</div>
+</li>
+
+<li><a id="orgad96121"></a>Define your audience<br />
+<div class="outline-text-5" id="text-orgad96121">
+<p>
+Determine who your target customer is: demographics, beliefs, influences and pain points. You want a clear image as possible in order to be able to help them as much as possible.
+</p>
+
+<p>
+By understanding your customer, your content can be tailor-made to fit their needs and tastes.
+</p>
+</div>
+</li>
+
+<li><a id="org0220cd1"></a>Content<br />
+<div class="outline-text-5" id="text-org0220cd1">
+<p>
+Determine what kind of content most resonates with your audience and why.
+</p>
+
+<p>
+Develop content that suits your brand’s tone, voice and style and ensure it is relevant to your audience.
+</p>
+</div>
+</li>
+
+<li><a id="orgb32b243"></a>Metrics<br />
+<div class="outline-text-5" id="text-orgb32b243">
+<p>
+Measure the effectiveness of your content: traffic, engagement, shares and conversions. Get to know how people are engaging with your content..
+</p>
+
+<p>
+Metrics can help uncover what your audience really likes. They can effectively map out where your business’ various strengths and weaknesses lie.
+</p>
+</div>
+</li>
+</ul>
+
+
+<div id="outline-container-org5fa2d3e" class="outline-4">
+<h4 id="org5fa2d3e">Pro Tips:</h4>
+<div class="outline-text-4" id="text-org5fa2d3e">
+<ul class="org-ul">
+<li>With your content marketing strategy in place, you need to put it to the test and see how it matches with your goals. Define smaller goals that would measure your progress and ensure you’re on track to meeting your vision.</li>
+
+<li>Develop content suited to your brand. Develop content that strengthens your brand. It should match your tone, voice and style.</li>
+
+<li>Develop content that is as informative as it is engaging. Teach people and empower them with the ability to make the right decisions. You want to be the best and nobody got there by aiming for no.2.</li>
+</ul>
+
+
+<p>
+Content marketing takes time to produce results. However, it can be less expensive and more profitable than traditional marketing tactics in the long run if done right.
+</p>
+
+
+<p>
+Loving what you have to say is one step away from loving what you have to sell.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org69647f4" class="outline-2">
+<h2 id="org69647f4">Content Mapping: Why it Matters and How to do it</h2>
+<div class="outline-text-2" id="text-org69647f4">
+<p>
+In order to truly understand content mapping, we need to understand the marketing funnel.
+</p>
+
+<p>
+The marketing funnel is a representation of how people behave as they interact with your  business. It is described as a funnel because more people learn about your brand than the ones who actually buy from you.
+</p>
+
+<p>
+The goal of developing a strong marketing funnel is to interact with, convert and retain as many customers as possible.
+</p>
+</div>
+
+<div id="outline-container-orgda414d6" class="outline-3">
+<h3 id="orgda414d6">Levels of the Marketing Funnel</h3>
+<div class="outline-text-3" id="text-orgda414d6">
+</div>
+<div id="outline-container-org15176af" class="outline-4">
+<h4 id="org15176af">Awareness</h4>
+<div class="outline-text-4" id="text-org15176af">
+<p>
+At this stage, the person has only just found out about your brand. They do not know your products, like them or even trust them. Your business is completely unknown to them and they are deciding whether they want to find out more.
+</p>
+
+<p>
+They will only accept low-risk offers. These offers require little to no investment of time, money or energy.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf37ea3" class="outline-4">
+<h4 id="orgdf37ea3">Liking your brand</h4>
+<div class="outline-text-4" id="text-orgdf37ea3">
+<p>
+The person has found out more about your brand and they like what they see. They may even share their interest in you with other people.
+</p>
+
+<p>
+They can engage with your business at a deeper level now.
+</p>
+
+<p>
+They are willing to attempt a higher-risk offer. They are also comparing your brand to your competitors.
+It’s like going out on a second date. You like them enough to want to see them a second time but they could still be an ax murderer. Albeit, a dedicated one.
+</p>
+
+<p>
+Customers need to know that they can trust you. They are willing to test the waters out. An offer to whet their appetite would not be remiss. So long as they do not have that much to lose, they just might buy you lunch.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd6a0e21" class="outline-4">
+<h4 id="orgd6a0e21">Trust and conversion</h4>
+<div class="outline-text-4" id="text-orgd6a0e21">
+<p>
+At this stage they either become a customer or they abandon the whole prospect entirely. They’re past considering your credibility.
+</p>
+
+<p>
+They just need to know whether the product is right for them. You need to convince them to buy.
+</p>
+
+<p>
+This is the third date. If it doesn’t happen now, then it probably never will. Another missed connection to add to the long list of could-haves and should-haves.
+</p>
+
+<p>
+At this point, the business has nothing to lose by going in strong. You’re already invested but the customer’s playing coy. They know they want you but they don’t want to commit.
+</p>
+
+<p>
+Double down on your offer. Go in for the kill. She might just swoon and you need to be there to pick her up.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5384097" class="outline-4">
+<h4 id="org5384097">Retention</h4>
+<div class="outline-text-4" id="text-org5384097">
+<p>
+At this stage, your business’ focus should be on maintaining your customers. You should affirm their faith in you. Provide an amazing after-purchase experience. They will in turn become evangelists of your product.
+</p>
+
+<p>
+You’ve won. You’ve just got to do a little maintenance.
+</p>
+
+<p>
+Remind them why you’re the best. Show them that you care. Send them flowers. They’ll appreciate it.
+</p>
+
+<p>
+They’ll continue to buy your product and tell others about it. If and only if, they feel like a valued customer
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org56e8cfd" class="outline-3">
+<h3 id="org56e8cfd">Content Mapping and The Marketing Funnel</h3>
+<div class="outline-text-3" id="text-org56e8cfd">
+<p>
+What does this have to do with content mapping?
+</p>
+
+<p>
+Content mapping is developing content that is designed to guide the buyer through this process. It is targeted at every stage the customer goes through and aimed towards guiding them to the next stage.
+</p>
+
+<p>
+The exact content will depend on your content marketing strategy.
+</p>
+
+<p>
+Maybe your brand focuses on video content in order to engage people who love YouTube. You can create a video series that reflects your customer’s thought process. A guide for newbies, tutorials for adepts and showcase montages for experts.
+</p>
+
+<p>
+Different forms of content will be useful at different stages. An in-depth article might be more impactful to attract newer members of your audience but an email newsletter might close sales better.
+</p>
+
+<p>
+The key is in combining both concepts; content mapping and the marketing funnel. The rest is creativity.
+</p>
+
+<p>
+That is the beauty of content marketing. It is highly versatile and can generate massive traffic while staying unique and true to the brand.
+</p>
+
+<p>
+Content mapping is content marketing taken to the next level. It is adapted to suit the customer and can grow businesses exponentially when done right.
+</p>
+
+<p>
+<a href="file:///home/kaizer/KaizerPublications.com/index.html">Home</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Kaizer</p>
+<p class="date">Created: 2021-09-29 Wed 16:25</p>
+</div>
+</body>
+</html>
