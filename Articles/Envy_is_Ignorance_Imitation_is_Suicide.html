@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-11-03 Wed 16:47 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Envy is Ignorance, Imitation is Suicide</title>
+<meta name="author" content="Kaizer" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Envy is Ignorance, Imitation is Suicide</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org98e7886">What is The Difference Between a King and His Horse?</a></li>
+<li><a href="#org2f7da1d">Chaos and You</a></li>
+<li><a href="#org52d145c">Cosmic Egos in the Rabbit Hole</a></li>
+<li><a href="#org57eb341">The Business of Living</a></li>
+<li><a href="#orgd32e7d1">Ad Astra Per Aspera</a></li>
+</ul>
+</div>
+</div>
+<p>
+We all have desires; Money, power, lust. It’s part of being human.
+</p>
+
+<p>
+So much so that the remains of the day are, often, lives of quiet desperation.
+</p>
+
+<p>
+Lustful desire, is essentially a rejection of what is. It’s dissatisfaction, ingratitude and ignorance rolled up into one hell of a cocktail. One sip and all you ever want is more.
+</p>
+
+<p>
+You’re convinced that unless you get what you want, you’ll never be complete. Like where was this [insert life-changing consumerist product designed to prey on your insecurities] before?
+</p>
+
+<p>
+I’ll tell you where, right where you found it. It’s strange isn’t it? It’s almost as if you attracted it to yourself.
+</p>
+
+<p>
+This isn’t the secret. There’s a logical explanation, one that doesn’t require faith.
+</p>
+
+<p>
+It goes like this. Bob’s an entrepreneur, Joe’s your average everyday consumer. Bob wants to make money, Joe wants to make an impression.
+</p>
+
+<p>
+See how it goes? Too crude and simplistic? Maybe something else is at work here, methinks.
+</p>
+
+<div id="outline-container-org98e7886" class="outline-2">
+<h2 id="org98e7886">What is The Difference Between a King and His Horse?</h2>
+<div class="outline-text-2" id="text-org98e7886">
+<p>
+Instinct. Perception. Choices.
+</p>
+
+<p>
+Joe’s just as free as Bob. So why does Bob get the money and Joe the insecurities? Bob’s bob and Joe’s just Joe? That doesn’t sound quite right.
+</p>
+
+<p>
+What about that time when Joe was a wee babe and got taken advantage of? Doesn’t that justify the difference between the two?
+</p>
+
+<p>
+Plus, Bob went to university. He’s got a degree, Joe’s got crippling anxiety. How’s that fair?
+</p>
+
+<p>
+It’s not Joe’s fault, is it? What could he have done about it? He didn’t have a choice. They were the ones that did it. He’s just your average everyday Joe!
+</p>
+
+<p>
+So why, oh why did they do this to him? What did he ever do to them? This is what his life has come to? He’s just an innocent victim.
+</p>
+
+<p>
+I mean what’s so special about Bob? Putting it mildly, he’s got yellow, crooked teeth for starters.
+</p>
+
+<p>
+Nothing like Joe’s pearly whites. He just had them done you know? What’s worse is that Bob’s always smiling. Joe’s embarrassed for him.
+</p>
+
+<p>
+He tried to tell him once. You know what Bob said? “Amor fati. All idealism is mendacity in the face of what is necessary.”
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2f7da1d" class="outline-2">
+<h2 id="org2f7da1d">Chaos and You</h2>
+<div class="outline-text-2" id="text-org2f7da1d">
+<p>
+Your life is not a burden, at least not strictly speaking. You’re a tabula rasa at birth, whether your life reads like a tragedy or a comedy is up to you.
+</p>
+
+<p>
+It’s your divine birthright, limited only by your creativity. You are eternally condemned to be free, deal with it.
+</p>
+
+<p>
+Regardless of what life throws at you, your response is your only responsibility.
+</p>
+
+<p>
+Folks are just about as happy as they make their minds up to be, aren’t they good old Abe?
+</p>
+
+<p>
+If you put so many fetters on your happiness, how then can you enjoy what’s actually happening?
+</p>
+
+<p>
+Life is what happens when you’re busy shopping for an identity.
+</p>
+
+<p>
+Whatever is happening in your life right now is not reason enough to be unhappy, unless you make it so.
+</p>
+
+<p>
+Life is inherently absurd and devoid of meaning but that doesn’t mean you should be unhappy and unfulfilled. What’s order without a little chaos?
+</p>
+
+<blockquote>
+<p>
+You must have chaos within you to give rise to a dancing star.
+~Nietzsche
+</p>
+</blockquote>
+
+<p>
+The random circumstances that gave rise to who you are make you unique. They are your biggest asset.
+</p>
+
+<p>
+There would be no you without what gave rise to you. Where you came from, everything that happened to you, the people you’ve met and the places you’ve been.
+</p>
+
+<p>
+Your unique quirks, your desires, the shape of your nose. Nothing can ever replace that. Nothing in the entire universe.
+</p>
+
+<p>
+So why oh why, should you be envious of anyone else? Can’t you see how beautiful you are?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org52d145c" class="outline-2">
+<h2 id="org52d145c">Cosmic Egos in the Rabbit Hole</h2>
+<div class="outline-text-2" id="text-org52d145c">
+<p>
+This is the difference between Bob and Joe. Joe imagines that he always needs something. He imagines that he is always lacking.
+</p>
+
+<p>
+He didn’t have the perfect childhood so his life is ruined. Since his life is ruined, he must be a terrible person.
+</p>
+
+<p>
+There must be a reason he has to cover his drab personality with gucci and not just because he sold his soul.
+</p>
+
+<p>
+Make sure you pay attention to ads and celebrities and you can’t go wrong. Bob still has the same pants from 5 years ago. Shouldn’t he have donated it already? Think about the children!
+</p>
+
+<p>
+Joe’s problem is that he doesn’t know himself. He doesn’t value himself. He doesn’t see himself as part  and parcel of the beautiful tapestry of humanity.
+</p>
+
+<p>
+He needs to let go. Of old pains and beliefs that don’t hurt him anymore. Of relationships that don’t serve him anymore. Of his own understanding of himself.
+</p>
+
+<p>
+He needs to let go of life as he knows it. He needs to let go of what the elevated call ego.
+</p>
+
+<blockquote>
+<p>
+The wound is where the light enters.
+~Rumi
+</p>
+</blockquote>
+
+<p>
+So many people have talked about this before. Christ, Muhammad, Buddha and probably your local priest. It’s a hot topic. Let’s talk about it.
+</p>
+
+<p>
+We’re here aren’t we? Or you’ve got something else to do?
+</p>
+
+<p>
+I get it, my article isn’t the most interesting you’ve read today. That’s probably true.
+</p>
+
+<p>
+You’ve read this somewhere else haven’t you? Good on you! You could probably explain it better than I ever could.
+</p>
+
+<p>
+If only you were writing this. Maybe then everyone would see how smart you are. I’m just a two-bit writer after all.
+</p>
+
+<p>
+We can only go deeper down the rabbit hole from here.
+</p>
+
+<p>
+Joe and I want to justify life’s chaos.
+</p>
+
+<p>
+If I’m a bad writer then I can write whatever. If Joe has a drab personality then he doesn’t even have to try.
+</p>
+
+<p>
+If you’re as smart as you think you are then you don’t need to learn anything new, right? So why bother?
+</p>
+
+<p>
+This, my friends, is ego. The storage house of all pain.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57eb341" class="outline-2">
+<h2 id="org57eb341">The Business of Living</h2>
+<div class="outline-text-2" id="text-org57eb341">
+<p>
+Pain. Pure unadulterated pain. Inescapable pain. There is nowhere to run to. Pain demands to be felt.
+</p>
+
+<p>
+There is only one recourse. Acceptance. You just stubbed your toe? Accept it and move on. Cursing the heavens is not about to change anything.
+</p>
+
+<p>
+You might just burst a vein. Think about it, or not :).
+</p>
+
+<p>
+The ego is never at peace. It’s always trying to get somewhere, understand something, figure something out.
+</p>
+
+<p>
+The ego is not present in the present moment. It’s always reliving the past or imagining the future. There’s always something, isn’t there?
+</p>
+
+<p>
+As if life was one big mistake. As if the world is hell-bent on destroying itself. As if everything was just wound up tight ticking down to eventual oblivion.
+</p>
+
+<p>
+As if we’re all just a miserable, haggardly, niggardly mass of desperation.
+</p>
+
+<p>
+What about now? This moment? The only thing we ever had. What more could you ever want? Why can’t you just be here with us?
+</p>
+
+<p>
+Is it the people around you? Your finances? Your relationships? What is it? Why can’t you just live in this moment as it is?
+</p>
+
+<p>
+Why is that there needs to be somewhere to get to? What are you going to find? What is it you need to fix you? To make you whole?
+</p>
+
+<p>
+Where did you lose yourself? Weren’t you always perfect?
+</p>
+
+<p>
+We’re born free, unencumbered and with the right to soar. Until in our ignorance and self-hatred we give up on our dreams and cut off our wings.
+</p>
+
+<p>
+Poking and prodding at our emotional and mental injuries until they fester. Unsurprisingly, the toxic vitriol that spews forth is of our own making.
+</p>
+
+<p>
+We are the architects of our own destruction. We love it. We can’t get enough of it. It’s our <i>raison d’etre</i>. It’s why you’re here, isn&rsquo;t it?
+</p>
+
+<p>
+To suffer meaninglessly for all eternity, or at least until death takes away all your pain.
+</p>
+
+<blockquote>
+<p>
+We act like mortals in all that we fear and immortals in all that we desire.
+~Seneca
+</p>
+</blockquote>
+
+<p>
+Our time here is limited. Our dreams, not so much. We have to get down to the business of living.
+</p>
+
+<p>
+Immediately.
+</p>
+
+<p>
+We cannot afford to waste time swimming in our fears and pains. The crippling fear that weighs us down serves no purpose.
+</p>
+
+<p>
+Fear kills all creativity and hope. Fear kills all possibility. All it takes to move forward is the courage to take life by the balls!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd32e7d1" class="outline-2">
+<h2 id="orgd32e7d1">Ad Astra Per Aspera</h2>
+<div class="outline-text-2" id="text-orgd32e7d1">
+<p>
+Responsibility does not equate tragedy. You are the only person responsible for how your life turns out. There is no one else to blame.
+</p>
+
+<p>
+You are everything you ever needed. There’s no need to worry. Just take charge and direct your life.
+</p>
+
+<p>
+There’s really nothing else to it. Every other person that came before you was made of nerve, bone and sinew.
+</p>
+
+<p>
+Take heart and overcome all obstacles in your path. The obstacle is the way.
+</p>
+
+<p>
+What you need is often what you avoid and beyond your fears lies the object of your desire.
+</p>
+
+<p>
+You can’t run away from yourself. Your weaknesses and limitations. Your past and your issues. These are all yours to deal with. You might as well have fun while doing so.
+</p>
+
+<p>
+Also, hating yourself does not make this any easier.
+</p>
+
+<p>
+Love yourself with a firm hand. Love yourself enough to want to change and improve your life. Love yourself enough to want to be happy.
+</p>
+
+<p>
+Love yourself enough that your shortcomings don’t become your downfall. Love yourself enough to obliterate all limitations.
+</p>
+
+<p>
+Love yourself enough to tap into the creative genius that lies in you. Love yourself enough to live free.
+</p>
+
+<p>
+Joe, you and I are perfect. Just the way we are. Regardless of what anybody else says. Regardless of whether or not we know it or not.
+</p>
+
+<p>
+Like a rose growing on a concrete pavement, our struggle is what makes us. Adversity is the fuel we need to become the people we want to become.
+</p>
+
+<p>
+If we never stood for anything we would fall for everything. All it ever took to make a change was a little elbow grease.
+</p>
+
+<p>
+Live from the deepest part of yourself. Live your truth. Live your life. Be you.
+</p>
+
+<p>
+Not who your friends and family think you are, not who society tells you to be, not even who your sweet grandmother wants you to be. You need to live authentically.
+</p>
+
+<p>
+Only you know who you are. Only you are in control of yourself. Only you can overcome your difficulties. Only you can live out your dreams.
+</p>
+
+<p>
+Make no mistake, your life is yours to live the way you see fit. All else is futility.
+</p>
+
+<p>
+You are only alive in that space between stimulus and response. That one inch.
+</p>
+
+<p>
+This present moment. All else is illusion. This is you. The rest is reflection.
+</p>
+
+<p>
+All you need is inside you. You were born for this so don’t shed your skin in order to fit in.
+</p>
+
+<p>
+Imitation is suicide.
+</p>
+
+<p>
+<a href="https://kaizerpublications.github.io/">Home</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Kaizer</p>
+<p class="date">Created: 2021-11-03 Wed 16:47</p>
+</div>
+</body>
+</html>
